@@ -11,6 +11,7 @@ namespace ECommerce_ShoppingCart_Common.Models
         public ApplicationRole(string roleName) : base(roleName)
         { 
         }
+
         [Required]
         public bool ActiveFlag { get; set; }
         public string? CreatedBy { get; set; } = "";

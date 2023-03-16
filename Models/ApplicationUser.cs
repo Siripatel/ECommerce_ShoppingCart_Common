@@ -11,6 +11,7 @@ namespace ECommerce_ShoppingCart_DAL.DbContext
         public ApplicationUser()
         { 
         }
+
         [Required(ErrorMessage = "Enter your Suffix")]
         [EnumDataType(typeof(SuffixEnum))]
         [JsonConverter(typeof(StringEnumConverter))]
@@ -47,6 +48,7 @@ namespace ECommerce_ShoppingCart_DAL.DbContext
         public DateTime? CreatedDate { get; set; }
         [JsonIgnore]
         public DateTime? UpdatedDate { get; set; }
+
         public virtual ICollection<IdentityUserClaim<Guid>>? Claims { get; set; }
         public virtual ICollection<IdentityUserLogin<Guid>>? Logins { get; set; }
         public virtual ICollection<IdentityUserToken<Guid>>? Tokens { get; set; }

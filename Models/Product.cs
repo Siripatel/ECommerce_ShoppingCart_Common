@@ -8,6 +8,7 @@ namespace ECommerce_ShoppingCart_Common.Models
         {
             Orders = new HashSet<Order>();
         }
+
         public int PId { get; set; }
         public string PSerialNumber { get; set; } = null!;
         public string PName { get; set; } = null!;
