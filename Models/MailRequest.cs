@@ -11,6 +11,6 @@ namespace ECommerce_ShoppingCart_Common.Models
         public string? Body { get; set; }
         [JsonIgnore]
         public bool? IsActive { get; set; }
-        public List<IFormFile> Attachments { get; set; }
+        //public List<IFormFile> Attachments { get; set; }
     }
 }
